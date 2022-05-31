@@ -44,3 +44,32 @@ pizzaJson.map((item, index) => {
 });
 
 //Eventos do modal
+//Fechamento
+function closeModal() {
+    c('.pizzaWindowArea').style.opacity = 0;
+    setTimeout(()=>{
+        c('.pizzaWindowArea').style.display = 'none';
+    },500);
+}
+cs('.pizzaInfo--cancelButton, .pizzaInfo--cancelMobileButton').forEach((item)=>{
+    item.addEventListener('click', closeModal);
+});
+//Aumentar e diminuir quantidade
+c('.pizzaInfo--qtmenos').addEventListener('click', ()=>{
+    if (modalQt > 1) {
+        modalQt--;
+        c('.pizzaInfo--qt').innerHTML = modalQt;
+    }  
+});
+c('.pizzaInfo--qtmais').addEventListener('click', ()=>{
+    modalQt++;
+    c('.pizzaInfo--qt').innerHTML = modalQt;
+});
+//Selecionar tamanho da pizza
+cs('.pizzaInfo--size').forEach((size, sizeIndex) =>{
+    size.addEventListener('click', (e)=> {
+        c('.pizzaInfo--size.selected').classList.remove('selected');
+        size.classList.add('selected');
+    });
+});
+
