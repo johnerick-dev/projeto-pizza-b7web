@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color:#EEE;
+    background-color:#7482ff5b;
     font-family:'Lato',Helvetica,Arial;
     font-size:15px;
     display:flex;
@@ -12,7 +12,16 @@ body {
 .models {
     display:none;
 }
-
+h1 {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 8px;
+    width: 45%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2.5rem;
+    box-shadow: 8px 8px 15px;
+}
 header {
     position: fixed;
     left:0;
@@ -42,7 +51,7 @@ header {
 }
 
 aside {
-    background-color:#9ccbe6;
+    background-color:#686c6e;
     width:0vw;
     font-family:'Hepta Slab', Helvetica, Arial;
     transition:all ease .2s;
@@ -105,8 +114,8 @@ h1 {
     background-color:#244c88;
 }
 .pizza-item--price {
-    font-size:15px;
-    color:#333;
+    font-size:16px;
+    color:rgb(0, 0, 0);
     margin-top:5px;
 }
 .pizza-item--name {
@@ -302,7 +311,7 @@ h1 {
 .cart--totalitem {
     padding:15px 0;
     border-top:1px solid #79b9dd;
-    color:#315970;
+    color:#111111;
     display:flex;
     justify-content: space-between;
     font-size:15px;
